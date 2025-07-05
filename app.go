@@ -46,7 +46,7 @@ type GifConvertOptions struct {
 func NewGifConvertOptions() *GifConvertOptions {
 	return &GifConvertOptions{
 		FPS:     10,
-		Width:   -1, // 幅
+		Width:   -1, // 幅は比率維持
 		Height:  -1, // 高さは比率維持
 		Quality: "lanczos",
 	}
