@@ -1,0 +1,41 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "gif-converter",
+  "outputfilename": "gif-converter",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+  },
+  "build": {
+    "targets": [
+      {
+        "platform": "darwin",
+        "arch": "universal"
+      },
+      {
+        "platform": "windows", 
+        "arch": "amd64"
+      }
+    ],
+    "beforeBuildCommand": "",
+    "afterBuildCommand": "",
+    "ldflags": "",
+    "tags": "",
+    "race": false,
+    "garble": false
+  },
+  "info": {
+    "companyName": "tomoyaWk",
+    "productName": "GIF Converter",
+    "productVersion": "1.0.0",
+    "copyright": "Copyright © 2024 tomoyaWk",
+    "comments": "Video to GIF converter application"
+  },
+  "nsisType": "multiple",
+  "obfuscated": false,
+  "debug": {
+    "openInspectorOnStartup": false
+  }
+}
