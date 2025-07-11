@@ -18,10 +18,6 @@ export function GetOutputDir() {
   return window['go']['main']['App']['GetOutputDir']();
 }
 
-export function Greet(arg1) {
-  return window['go']['main']['App']['Greet'](arg1);
-}
-
 export function OpenOutputDir() {
   return window['go']['main']['App']['OpenOutputDir']();
 }
